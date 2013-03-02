@@ -14,7 +14,7 @@
 
 		/**
 		 * Contains the hooks that get registered with this EventManager. The array for storage utilizes a "flat"
-		 * object literal such that looking up the hook utilizes the native hash object literal hash.
+		 * object literal such that looking up the hook utilizes the native object literal hash.
 		 */
 		var STORAGE = {
 			actions : {},
