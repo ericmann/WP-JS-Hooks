@@ -90,11 +90,7 @@
 		 * Performs an filter if it exists. You should only ever pass 1 argument to be filtered. The only rule is that
 		 * the first argument must always be the filter.
 		 */
-		SELF.applyFilter = function( /* filter, arg1 */ ) {
-			var args = Array.prototype.slice.call( arguments );
-			var filter = args.shift();
-			var param = args.shift();
-
+		SELF.applyFilter = function( filter, param ) {
 			if( _validateNamespace( filter ) === false ) {
 				return SELF;
 			}
