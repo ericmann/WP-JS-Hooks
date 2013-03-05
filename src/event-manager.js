@@ -204,6 +204,9 @@
 		var _runHook = function( type, hook, args ) {
 			var hooks = STORAGE[ type ][ hook ];
 			if( typeof hooks === 'undefined' ) {
+				if( type === 'filters' ) {
+					return args;
+				}
 				return false;
 			}
 
