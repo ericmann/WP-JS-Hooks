@@ -1,5 +1,5 @@
 ( function( window, undefined ) {
-	'use strict';
+	"use strict";
 	var document = window.document;
 
 	/**
