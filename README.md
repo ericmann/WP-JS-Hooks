@@ -7,7 +7,7 @@ A lightweight &amp; efficient EventManager for JS in WP.
 See ticket [#21170](http://core.trac.wordpress.org/ticket/21170) for more information. We also did a general overview of the project at [WordSesh](http://wordsesh.com) that you can find [here](http://www.youtube.com/watch?v=oEF7EBjZ-kE&feature=c4-feed-u).
 
 ### Dependencies
-WP-JS-Hooks does not require any third-party applications or software. The library is complemetely self-maintained. However, the repository itself uses Grunt to perform tasks such as JSHint, Uglify, and QUnit. For more information on how to install Grunt, please visit [http://gruntjs.com](http://gruntjs.com)
+WP-JS-Hooks does not require any third-party applications or software. The library is completely self-maintained. However, the repository itself uses Grunt to perform tasks such as JSHint, Uglify, and QUnit. For more information on how to install Grunt, please visit [http://gruntjs.com](http://gruntjs.com)
 
 ### API Usage
 API functions can be called via the global `wp.hooks` like this `wp.hooks.addAction()`, etc.
