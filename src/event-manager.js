@@ -91,11 +91,15 @@
 		 * the first argument must always be the filter.
 		 */
 		SELF.applyFilter = function( filter, param ) {
+			
+			var args = Array.prototype.slice.call( arguments );
+			var filter = args.shift();
+			
 			if( _validateNamespace( filter ) === false ) {
 				return SELF;
 			}
 
-			return _runHook( 'filters', filter, param );
+			return _runHook( 'filters', filter, args );
 		};
 
 		/**
@@ -215,7 +219,7 @@
 					hooks[ i ].callback.apply( undefined, args );
 				}
 				else {
-					args = hooks[ i ].callback.apply( undefined, [ args ] );
+					args[0] = hooks[ i ].callback.apply( undefined, args );
 				}
 			}
 
@@ -223,7 +227,7 @@
 				return true;
 			}
 
-			return args;
+			return args[0];
 		};
 
 	};
