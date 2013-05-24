@@ -209,7 +209,7 @@
 			var hooks = STORAGE[ type ][ hook ];
 			if( typeof hooks === 'undefined' ) {
 				if( type === 'filters' ) {
-					return args;
+					return args[0];
 				}
 				return false;
 			}
